@@ -83,43 +83,17 @@ const PostContainer = styled.div`
 const PostCard = () => {
   return (
     <>
-      <PostWrapperLayout>
-        <PostContainer>
-          <PostWrapper>
-            <PostUp></PostUp>
-            <PostDown>
-              <PostTitle> How to save for travel? </PostTitle>
-              <PostExcerpt>
-                Now you have a monthly investment figure ready, all you need to
-                do is start investing.
-              </PostExcerpt>
-              <ButtonRead>Read More &rarr;</ButtonRead>
-            </PostDown>
-          </PostWrapper>
-          <PostWrapper>
-            <PostUp></PostUp>
-            <PostDown>
-              <PostTitle> How to save for travel? </PostTitle>
-              <PostExcerpt>
-                Now you have a monthly investment figure ready, all you need to
-                do is start investing.
-              </PostExcerpt>
-              <ButtonRead>Read More &rarr;</ButtonRead>
-            </PostDown>
-          </PostWrapper>
-          <PostWrapper>
-            <PostUp></PostUp>
-            <PostDown>
-              <PostTitle> How to save for travel? </PostTitle>
-              <PostExcerpt>
-                Now you have a monthly investment figure ready, all you need to
-                do is start investing.
-              </PostExcerpt>
-              <ButtonRead>Read More &rarr;</ButtonRead>
-            </PostDown>
-          </PostWrapper>
-        </PostContainer>
-      </PostWrapperLayout>
+      <PostWrapper>
+        <PostUp></PostUp>
+        <PostDown>
+          <PostTitle> How to save for travel? </PostTitle>
+          <PostExcerpt>
+            Now you have a monthly investment figure ready, all you need to do
+            is start investing.
+          </PostExcerpt>
+          <ButtonRead>Read More &rarr;</ButtonRead>
+        </PostDown>
+      </PostWrapper>
     </>
   );
 };

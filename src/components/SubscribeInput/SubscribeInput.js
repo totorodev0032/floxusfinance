@@ -52,7 +52,7 @@ const Button = styled.button`
 `;
 
 const SymbolNext = styled.p`
-  padding-bottom: 2px;
+  padding-bottom: 5px;
 `;
 
 const SubscribeInput = () => {

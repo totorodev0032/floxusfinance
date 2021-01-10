@@ -7,17 +7,21 @@ const PostWrapper = styled.div`
   width: 320px;
   height: 350px;
   background-color: #ffffff;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-bottom: 20px;
-  box-shadow: 0 9.5px 5.3px rgba(0, 0, 0, 0.008),
-    0 31.9px 17.9px rgba(0, 0, 0, 0.012), 0 143px 80px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.017),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.024), 0 12.5px 10px rgba(0, 0, 0, 0.03),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.036), 0 41.8px 33.4px rgba(0, 0, 0, 0.043),
+    0 100px 80px rgba(0, 0, 0, 0.06);
 `;
 
 const PostUp = styled.div`
   display: flex;
   flex-basis: 50%;
-  background-color: #2026d2;
+  background-color: #eeeeee;
   width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 `;
 
 const PostDown = styled.div`
@@ -58,26 +62,10 @@ const ButtonRead = styled.button`
   font-weight: 700;
   font-size: 17px;
   border-radius: 3px;
+  cursor: pointer;
   &:focus {
     outline: none;
   }
-`;
-
-const PostWrapperLayout = styled.div`
-  display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  background-color: #f6f7fa;
-`;
-
-const PostContainer = styled.div`
-  display: flex;
-  width: 70%;
-  height: auto;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  justify-content: space-between;
 `;
 
 const PostCard = () => {

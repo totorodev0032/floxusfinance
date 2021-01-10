@@ -1,7 +1,7 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Layout from '../Layout';
+import SubscribeInput from '../SubscribeInput/SubscribeInput';
 
 const Herosection = styled.div`
   display: flex;
@@ -25,13 +25,11 @@ const LeftHero = styled.div`
   height: 400px;
   flex-basis: 50%;
   justify-content: center;
-  /* background-color: green; */
 `;
 const RightHero = styled.div`
   display: flex;
   height: 400px;
   flex-basis: 50%;
-  /* background-color: red; */
 `;
 
 const Heading = styled.p`
@@ -40,45 +38,6 @@ const Heading = styled.p`
   color: white;
   font-weight: 700;
   font-size: 30px;
-`;
-const InputContainer = styled.div`
-  display: flex;
-  height: 40px;
-  width: 70%;
-  background-color: white;
-  border-radius: 5px;
-  align-items: center;
-  justify-content: space-around;
-`;
-
-const Input = styled.input`
-  width: 70%;
-  height: 80%;
-  border: none;
-  margin-left: 3px;
-
-  :hover {
-    outline: none;
-  }
-
-  ::placeholder {
-    font-size: 17px;
-    color: gray;
-  }
-`;
-
-const Button = styled.button`
-  display: flex;
-  width: 20%;
-  height: 90%;
-  background-color: #f1295c;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 900;
-  font-size: 25px;
-  border: none;
-  border-radius: 2px;
 `;
 
 const HeroSection = () => {
@@ -92,10 +51,7 @@ const HeroSection = () => {
                 Join us on our mission — to help people around the world to be
                 financially empowered.
               </Heading>
-              <InputContainer>
-                <Input placeholder="Subscribe to our blog" />
-                <Button> &rarr; </Button>
-              </InputContainer>
+              <SubscribeInput />
             </LeftHero>
             <RightHero></RightHero>
           </HeroContent>

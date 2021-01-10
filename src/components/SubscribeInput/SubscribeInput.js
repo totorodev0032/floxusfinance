@@ -9,6 +9,10 @@ const InputContainer = styled.div`
   border-radius: 5px;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 496px) {
+    width: 100%;
+  }
 `;
 
 const Input = styled.input`

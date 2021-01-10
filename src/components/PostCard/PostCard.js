@@ -4,8 +4,8 @@ import styled from '@emotion/styled';
 const PostWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 350px;
+  width: 317px;
+  height: 470px;
   background-color: #ffffff;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -13,11 +13,15 @@ const PostWrapper = styled.div`
     0 6.7px 5.3px rgba(0, 0, 0, 0.024), 0 12.5px 10px rgba(0, 0, 0, 0.03),
     0 22.3px 17.9px rgba(0, 0, 0, 0.036), 0 41.8px 33.4px rgba(0, 0, 0, 0.043),
     0 100px 80px rgba(0, 0, 0, 0.06);
+
+  @media (max-width: 496px) {
+    width: 90%;
+  }
 `;
 
 const PostUp = styled.div`
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 38%;
   background-color: #eeeeee;
   width: 100%;
   border-top-right-radius: 5px;
@@ -27,25 +31,25 @@ const PostUp = styled.div`
 const PostDown = styled.div`
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: 62%;
   width: 100%;
 `;
 
 const PostTitle = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   color: #212121;
   margin: 0;
-  padding: 15px 10px 10px 10px;
+  padding: 20px 10px 10px 20px;
 `;
 
 const PostExcerpt = styled.p`
   font-family: Open Sans;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  padding: 0 10px 0 10px;
+  padding: 0 20px 0 20px;
 `;
 
 const ButtonRead = styled.button`
@@ -58,7 +62,7 @@ const ButtonRead = styled.button`
   height: 40px;
   border: none;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 17px;
   border-radius: 3px;
@@ -74,7 +78,9 @@ const PostCard = () => {
       <PostWrapper>
         <PostUp></PostUp>
         <PostDown>
-          <PostTitle> How to save for travel? </PostTitle>
+          <PostTitle>
+            How to save your monthly pocket money for travel?
+          </PostTitle>
           <PostExcerpt>
             Now you have a monthly investment figure ready, all you need to do
             is start investing.

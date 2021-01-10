@@ -1,4 +1,5 @@
 import React from 'react';
+import { jsx, css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Layout from '../Layout';
 import SubscribeInput from '../SubscribeInput/SubscribeInput';
@@ -16,20 +17,21 @@ const Herosection = styled.div`
 const HeroContent = styled.div`
   display: flex;
   height: 400px;
-  width: 70%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
 `;
 
 const LeftHero = styled.div`
   display: flex;
   flex-direction: column;
   height: 400px;
-  flex-basis: 50%;
+  flex-basis: 60%;
   justify-content: center;
-`;
-const RightHero = styled.div`
-  display: flex;
-  height: 400px;
-  flex-basis: 50%;
+  align-items: center;
+  @media (max-width: 496px) {
+    flex-basis: 100%;
+  }
 `;
 
 const Heading = styled.p`
@@ -38,6 +40,10 @@ const Heading = styled.p`
   color: white;
   font-weight: 700;
   font-size: 30px;
+  text-align: center;
+  @media (max-width: 496px) {
+    font-size: 20px;
+  }
 `;
 
 const HeroSection = () => {
@@ -48,12 +54,11 @@ const HeroSection = () => {
           <HeroContent>
             <LeftHero>
               <Heading>
-                Join us on our mission — to help people around the world to be
+                Join us on our mission to help people around the world to be
                 financially empowered.
               </Heading>
               <SubscribeInput />
             </LeftHero>
-            <RightHero></RightHero>
           </HeroContent>
         </Herosection>
       </Layout>

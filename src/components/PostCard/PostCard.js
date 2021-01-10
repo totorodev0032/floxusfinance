@@ -31,7 +31,13 @@ const PostUp = styled.div`
 const PostDown = styled.div`
   display: flex;
   flex-direction: column;
-  flex-basis: 62%;
+  flex-basis: 47%;
+  width: 100%;
+`;
+
+const PostFooter = styled.div`
+  display: flex;
+  flex-basis: 15%;
   width: 100%;
 `;
 
@@ -56,7 +62,7 @@ const ButtonRead = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2026d2;
+  background-color: #f1295c;
   color: white;
   width: 90%;
   height: 40px;
@@ -67,6 +73,7 @@ const ButtonRead = styled.button`
   font-size: 17px;
   border-radius: 3px;
   cursor: pointer;
+  padding-bottom: 5px;
   &:focus {
     outline: none;
   }
@@ -85,8 +92,10 @@ const PostCard = () => {
             Now you have a monthly investment figure ready, all you need to do
             is start investing.
           </PostExcerpt>
-          <ButtonRead>Read More &rarr;</ButtonRead>
         </PostDown>
+        <PostFooter>
+          <ButtonRead>Read More &rarr;</ButtonRead>
+        </PostFooter>
       </PostWrapper>
     </>
   );

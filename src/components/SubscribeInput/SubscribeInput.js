@@ -26,8 +26,10 @@ const Input = styled.input`
   }
 
   ::placeholder {
-    font-size: 17px;
+    font-size: 15px;
     color: gray;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `;
 
@@ -49,12 +51,19 @@ const Button = styled.button`
   }
 `;
 
+const SymbolNext = styled.p`
+  padding-bottom: 2px;
+`;
+
 const SubscribeInput = () => {
   return (
     <>
       <InputContainer>
         <Input placeholder="Subscribe to our blog" />
-        <Button> &rarr; </Button>
+        <Button>
+          {' '}
+          <SymbolNext>&rarr;</SymbolNext>{' '}
+        </Button>
       </InputContainer>
     </>
   );

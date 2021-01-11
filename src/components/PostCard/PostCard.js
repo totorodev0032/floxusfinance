@@ -53,8 +53,8 @@ const PostTitle = styled.p`
 
 const PostExcerpt = styled.p`
   font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 400;
   padding: 0 20px 0 20px;
 `;
 

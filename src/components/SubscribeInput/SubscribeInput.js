@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 const InputContainer = styled.div`
   display: flex;
-  height: 40px;
+  height: 50px;
   width: 70%;
   background-color: white;
   border-radius: 5px;
@@ -35,7 +35,7 @@ const Input = styled.input`
 
 const Button = styled.button`
   display: flex;
-  width: 20%;
+  width: 22%;
   height: 90%;
   background-color: #f1295c;
   justify-content: center;
@@ -61,8 +61,7 @@ const SubscribeInput = () => {
       <InputContainer>
         <Input placeholder="Subscribe to our blog" />
         <Button>
-          {' '}
-          <SymbolNext>&rarr;</SymbolNext>{' '}
+          <SymbolNext>&rarr;</SymbolNext>
         </Button>
       </InputContainer>
     </>

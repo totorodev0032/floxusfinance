@@ -1,6 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "floxusfinance",
+    title: 'floxusfinance',
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-emotion',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/Layout.js'),
+        },
+      },
+    },
+  ],
 };

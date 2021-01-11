@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import PostCard from '../PostCard/PostCard';
+import usePosts from '../../hooks/use-post.js';
 
 const PostWrapperLayout = styled.div`
   display: flex;
@@ -26,14 +27,16 @@ const PostContainer = styled.div`
 `;
 
 const PostContainerLayout = () => {
+  const posts = usePosts();
+  console.log(posts);
   return (
     <>
       <PostWrapperLayout>
         <PostContainer>
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
+          {posts.map((post) => (
+            <PostCard key={post.slug} post={post} />
+          ))}
+          {/* <PostCard /> */}
         </PostContainer>
       </PostWrapperLayout>
     </>

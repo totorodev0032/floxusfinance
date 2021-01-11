@@ -79,19 +79,14 @@ const ButtonRead = styled.button`
   }
 `;
 
-const PostCard = () => {
+const PostCard = ({ post }) => {
   return (
     <>
       <PostWrapper>
         <PostUp></PostUp>
         <PostDown>
-          <PostTitle>
-            How to save your monthly pocket money for travel?
-          </PostTitle>
-          <PostExcerpt>
-            Now you have a monthly investment figure ready, all you need to do
-            is start investing.
-          </PostExcerpt>
+          <PostTitle>{post.title}</PostTitle>
+          <PostExcerpt>{post.excerpt}</PostExcerpt>
         </PostDown>
         <PostFooter>
           <ButtonRead>Read More &rarr;</ButtonRead>

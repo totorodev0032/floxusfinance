@@ -23,6 +23,7 @@
     "gatsby": "^2.26.1",
     "gatsby-plugin-emotion": "^5.2.0",
     "gatsby-plugin-mdx": "^1.8.0",
+    "gatsby-source-filesystem": "^2.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

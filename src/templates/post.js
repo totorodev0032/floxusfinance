@@ -30,6 +30,10 @@ const PostArea = styled.div`
   flex-direction: column;
   width: 50%;
   height: auto;
+
+  @media (max-width: 496px) {
+    width: 90%;
+  }
 `;
 
 const PostTemplate = ({ data: { mdx: post } }) => (

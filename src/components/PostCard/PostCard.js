@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Link } from 'gatsby';
 
 const PostWrapper = styled.div`
   display: flex;
@@ -58,12 +59,21 @@ const PostExcerpt = styled.p`
   padding: 0 20px 0 20px;
 `;
 
-const ButtonRead = styled.button`
+const NavLink = styled(Link)`
+  text-decoration: none;
+  display: flex;
+  height: auto;
+  width: auto;
+`;
+
+const ButtonRead = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f1295c;
   color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 90%;
   height: 40px;
   border: none;
@@ -74,6 +84,7 @@ const ButtonRead = styled.button`
   border-radius: 3px;
   cursor: pointer;
   padding-bottom: 5px;
+  text-decoration: none;
   &:focus {
     outline: none;
   }
@@ -89,7 +100,9 @@ const PostCard = ({ post }) => {
           <PostExcerpt>{post.excerpt}</PostExcerpt>
         </PostDown>
         <PostFooter>
-          <ButtonRead>Read More &rarr;</ButtonRead>
+          {/* <NavLink to={post.slug}> */}
+          <ButtonRead to={post.slug}>Read More &rarr;</ButtonRead>
+          {/* </NavLink> */}
         </PostFooter>
       </PostWrapper>
     </>

@@ -33,7 +33,6 @@ const SubscribeContainer = () => {
         <SubscribeInput />
         <Heading>Logo</Heading>
       </Wrapper>
-      {/* <p>by Floxus </p> */}
     </>
   );
 };

@@ -30,6 +30,9 @@ const PostArea = styled.div`
   flex-direction: column;
   width: 50%;
   height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 
   @media (max-width: 496px) {
     width: 90%;
@@ -40,7 +43,18 @@ const PostTemplate = ({ data: { mdx: post } }) => (
   <Layout>
     <PostAreaContainer>
       <PostArea>
-        <h1>{post.frontmatter.title}</h1>
+        <h1
+          css={css`
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+              Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+              sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            text-align: center;
+          `}
+        >
+          {post.frontmatter.title}
+        </h1>
         <p
           css={css`
             font-size: 0.75rem;

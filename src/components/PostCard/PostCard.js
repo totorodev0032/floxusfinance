@@ -6,7 +6,7 @@ const PostWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 317px;
-  height: 470px;
+  height: 460px;
   background-color: #ffffff;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -32,13 +32,13 @@ const PostUp = styled.div`
 const PostDown = styled.div`
   display: flex;
   flex-direction: column;
-  flex-basis: 47%;
+  flex-basis: 42%;
   width: 100%;
 `;
 
 const PostFooter = styled.div`
   display: flex;
-  flex-basis: 15%;
+  flex-basis: 20%;
   width: 100%;
 `;
 
@@ -86,6 +86,7 @@ const ButtonRead = styled(Link)`
   cursor: pointer;
   padding-bottom: 5px;
   text-decoration: none;
+  ${'' /* margin-bottom: 15px; */}
   &:focus {
     outline: none;
   }

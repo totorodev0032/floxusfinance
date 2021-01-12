@@ -18,7 +18,7 @@ const PostContainer = styled.div`
   flex-wrap: wrap;
   margin-top: 30px;
   justify-content: space-between;
-
+  padding-bottom: 20px;
   @media (max-width: 496px) {
     width: 100%;
     justify-content: center;

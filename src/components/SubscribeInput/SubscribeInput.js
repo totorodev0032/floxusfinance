@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 const InputContainer = styled.div`
   display: flex;
   height: 50px;
-  width: 70%;
+  width: 40%;
   background-color: #f3f2fa;
   border: 3px solid #e9e3fe;
   border-radius: 10px;
@@ -12,7 +12,7 @@ const InputContainer = styled.div`
   justify-content: space-around;
 
   @media (max-width: 496px) {
-    width: 100%;
+    width: 90%;
   }
 `;
 

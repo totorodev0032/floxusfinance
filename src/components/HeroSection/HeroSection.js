@@ -8,7 +8,8 @@ const Herosection = styled.div`
   display: flex;
   height: 400px;
   width: 100%;
-  background-color: #2026d2;
+  ${'' /* background-color: #2026d2; */}
+  background-color: #26D7AB;
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -37,7 +38,8 @@ const LeftHero = styled.div`
 const Heading = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
+  ${'' /* color: white; */}
+  color:#2A2552;
   font-weight: 700;
   font-size: 30px;
   text-align: center;

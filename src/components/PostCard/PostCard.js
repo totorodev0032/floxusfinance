@@ -70,7 +70,8 @@ const ButtonRead = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f1295c;
+  ${'' /* background-color: #f1295c; */}
+  background-color:#5367FF;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

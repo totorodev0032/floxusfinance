@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 import Layout from '../Layout';
+import { Link } from 'gatsby';
 
 const NavWrapper = styled.div`
   display: flex;
@@ -33,7 +34,7 @@ const NavRight = styled.div`
   align-items: center;
 `;
 
-const BtnLink = styled.div`
+const BtnLink = styled(Link)`
   display: flex;
   width: 120px;
   height: 40px;
@@ -65,7 +66,7 @@ const Navbar = () => {
               </h1>
             </NavLeft>
             <NavRight>
-              <BtnLink>
+              <BtnLink to="/#subscribe">
                 <p
                   css={css`
                     color: white;

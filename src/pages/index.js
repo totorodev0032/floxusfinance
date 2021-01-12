@@ -11,7 +11,7 @@ const IndexPage = () => {
       <Navbar />
       <HeroSection />
       <PostContainerLayout />
-      <SubscribeContainer />
+      <SubscribeContainer id="subscribe" />
     </>
   );
 };

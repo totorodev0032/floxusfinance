@@ -28,7 +28,7 @@ const Heading = styled.p`
 const SubscribeContainer = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="subscribe">
         <Heading>Subscribe to our blog.</Heading>
         <SubscribeInput />
         <Heading>Logo</Heading>

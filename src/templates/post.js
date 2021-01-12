@@ -5,6 +5,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import { Link } from 'gatsby';
+import SubscribeContainer from '../components/SubscribeContainer/SubscribeContainer';
 
 export const query = graphql`
   query($slug: String!) {
@@ -20,9 +21,11 @@ export const query = graphql`
 
 const PostAreaContainer = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   justify-content: center;
+  align-items: center;
 `;
 
 const PostArea = styled.div`
@@ -65,6 +68,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
         <MDXRenderer>{post.body}</MDXRenderer>
         <Link to="/">&larr; back to all posts</Link>
       </PostArea>
+      <SubscribeContainer />
     </PostAreaContainer>
   </Layout>
 );

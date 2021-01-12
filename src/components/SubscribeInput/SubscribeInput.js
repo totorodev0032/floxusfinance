@@ -38,8 +38,8 @@ const Button = styled.button`
   display: flex;
   width: 22%;
   height: 90%;
-  ${'' /* background-color: #f1295c; */}
-  background-color: #5367FF;
+  background-color: #f1295c;
+  ${'' /* background-color: #5367FF; */}
   justify-content: center;
   align-items: center;
   color: white;

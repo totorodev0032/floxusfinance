@@ -48,6 +48,24 @@ const Heading = styled.p`
   }
 `;
 
+const ButtonJoin = styled.button`
+  display: flex;
+  height: 50px;
+  width: 200px;
+  background-color: #f1295c;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+  margin-top: 20px;
+`;
+
 const HeroSection = () => {
   return (
     <>
@@ -59,7 +77,8 @@ const HeroSection = () => {
                 Join us on our mission to help people around the world to be
                 financially empowered.
               </Heading>
-              <SubscribeInput />
+              {/* <SubscribeInput /> */}
+              <ButtonJoin>Join Community</ButtonJoin>
             </LeftHero>
           </HeroContent>
         </Herosection>

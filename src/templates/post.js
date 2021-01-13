@@ -66,7 +66,14 @@ const PostTemplate = ({ data: { mdx: post } }) => (
           Posted by {post.frontmatter.author}
         </p>
         <MDXRenderer>{post.body}</MDXRenderer>
-        <Link to="/">&larr; back to all posts</Link>
+        <Link
+          to="/"
+          css={css`
+            margin-bottom: 20px;
+          `}
+        >
+          &larr; back to all posts
+        </Link>
       </PostArea>
       <SubscribeContainer />
     </PostAreaContainer>

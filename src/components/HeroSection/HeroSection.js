@@ -39,9 +39,9 @@ const Heading = styled.p`
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #193259;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
-  letter-spacing: 1;
+  letter-spacing: 1px;
   @media (max-width: 496px) {
     font-size: 20px;
   }

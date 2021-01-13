@@ -5,7 +5,7 @@ const InputContainer = styled.div`
   display: flex;
   height: 50px;
   width: 40%;
-  background-color: #f3f2fa;
+  background-color: white;
   border: 3px solid #e9e3fe;
   border-radius: 10px;
   align-items: center;
@@ -21,7 +21,7 @@ const Input = styled.input`
   height: 80%;
   border: none;
   margin-left: 3px;
-  background-color: #f3f2fa;
+  background-color: white;
   :focus {
     outline: none;
   }
@@ -38,7 +38,7 @@ const Button = styled.button`
   display: flex;
   width: 22%;
   height: 90%;
-  background-color: #f1295c;
+  background-color: #0ecc70;
   ${'' /* background-color: #5367FF; */}
   justify-content: center;
   align-items: center;

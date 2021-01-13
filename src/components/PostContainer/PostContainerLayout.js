@@ -8,7 +8,7 @@ const PostWrapperLayout = styled.div`
   width: 100%;
   height: auto;
   justify-content: center;
-  background-color: #f6f7fa;
+  background-color: white;
 `;
 
 const PostContainer = styled.div`

@@ -6,10 +6,11 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 250px;
+  height: 270px;
+  background-color: #f4f8fc;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  ${'' /* background-color: white; */}
 `;
 
 const Heading = styled.p`
@@ -17,9 +18,11 @@ const Heading = styled.p`
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
   ${'' /* color:#2A2552; */}
+  color:#193259;
   font-weight: 700;
   font-size: 30px;
   text-align: center;
+  letter-spacing: 1;
   @media (max-width: 496px) {
     font-size: 20px;
   }

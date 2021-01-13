@@ -7,7 +7,8 @@ import { Link } from 'gatsby';
 const NavWrapper = styled.div`
   display: flex;
   width: 100%;
-  background-color: #2026d2;
+  ${'' /* background-color: #2026d2; */}
+  background-color:white;
   height: 70px;
   justify-content: center;
   align-items: center;
@@ -38,7 +39,8 @@ const BtnLink = styled(Link)`
   display: flex;
   width: 120px;
   height: 40px;
-  background-color: #f1295c;
+  ${'' /* background-color: #f1295c; */}
+  background-color:#46B86E;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -56,7 +58,7 @@ const Navbar = () => {
             <NavLeft>
               <h1
                 css={css`
-                  color: white;
+                  color: #193259;
                   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
                     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
                     'Helvetica Neue', sans-serif;

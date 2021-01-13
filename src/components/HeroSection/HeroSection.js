@@ -8,7 +8,8 @@ const Herosection = styled.div`
   display: flex;
   height: 400px;
   width: 100%;
-  background-color: #2026d2;
+  ${'' /* background-color: #2026d2; */}
+  background-color: white;
   ${'' /* background-color: #26D7AB; */}
   margin: 0;
   padding: 0;
@@ -38,11 +39,13 @@ const LeftHero = styled.div`
 const Heading = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
+  ${'' /* color: white; */}
   ${'' /* color:#2A2552; */}
+  color:#193259;
   font-weight: 700;
   font-size: 30px;
   text-align: center;
+  letter-spacing: 1;
   @media (max-width: 496px) {
     font-size: 20px;
   }
@@ -52,7 +55,8 @@ const ButtonJoin = styled.button`
   display: flex;
   height: 50px;
   width: 200px;
-  background-color: #f1295c;
+  ${'' /* background-color: #f1295c; */}
+  background-color:#46B86E;
   color: white;
   justify-content: center;
   align-items: center;
@@ -64,6 +68,8 @@ const ButtonJoin = styled.button`
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   cursor: pointer;
   margin-top: 20px;
+  letter-spacing: 2;
+  font-size: 18px;
 `;
 
 const HeroSection = () => {

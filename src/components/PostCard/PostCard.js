@@ -8,14 +8,7 @@ const PostWrapper = styled.div`
   width: 328px;
   height: 400px;
   background-color: #f4f8fc;
-  ${'' /* border-radius: 5px; */}
   margin-bottom: 20px;
-  ${
-    '' /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.017),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.024), 0 12.5px 10px rgba(0, 0, 0, 0.03),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.036), 0 41.8px 33.4px rgba(0, 0, 0, 0.043),
-    0 100px 80px rgba(0, 0, 0, 0.06); */
-  }
 
   @media (max-width: 496px) {
     width: 90%;
@@ -27,8 +20,6 @@ const PostUp = styled.div`
   flex-basis: 38%;
   background-color: #e0f7fa;
   width: 100%;
-  ${'' /* border-top-right-radius: 5px; */}
-  ${'' /* border-top-left-radius: 5px; */}
 `;
 
 const PostDown = styled.div`
@@ -49,8 +40,7 @@ const PostTitle = styled.p`
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   font-weight: 600;
-  ${'' /* color: #212121; */}
-  color:#193259;
+  color: #193259;
   margin: 0;
   padding: 20px 10px 10px 20px;
   letter-spacing: 1px;
@@ -77,7 +67,6 @@ const ButtonRead = styled(Link)`
   justify-content: center;
   align-items: center;
   background-color: #0ecc70;
-  ${'' /* background-color:#5367FF; */}
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -92,7 +81,6 @@ const ButtonRead = styled(Link)`
   cursor: pointer;
   padding-bottom: 5px;
   text-decoration: none;
-  ${'' /* margin-bottom: 15px; */}
   &:focus {
     outline: none;
   }

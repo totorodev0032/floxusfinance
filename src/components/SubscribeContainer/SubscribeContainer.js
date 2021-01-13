@@ -10,15 +10,13 @@ const Wrapper = styled.div`
   background-color: #f4f8fc;
   align-items: center;
   justify-content: center;
-  ${'' /* background-color: white; */}
 `;
 
 const Heading = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
-  ${'' /* color:#2A2552; */}
-  color:#193259;
+  color: #193259;
   font-weight: 700;
   font-size: 30px;
   text-align: center;

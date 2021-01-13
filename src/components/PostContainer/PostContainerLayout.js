@@ -36,7 +36,6 @@ const PostContainerLayout = () => {
           {posts.map((post) => (
             <PostCard key={post.slug} post={post} />
           ))}
-          {/* <PostCard /> */}
         </PostContainer>
       </PostWrapperLayout>
     </>

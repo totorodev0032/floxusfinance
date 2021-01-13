@@ -39,7 +39,6 @@ const Button = styled.button`
   width: 22%;
   height: 90%;
   background-color: #0ecc70;
-  ${'' /* background-color: #5367FF; */}
   justify-content: center;
   align-items: center;
   color: white;

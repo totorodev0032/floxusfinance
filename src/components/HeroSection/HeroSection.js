@@ -8,9 +8,7 @@ const Herosection = styled.div`
   display: flex;
   height: 400px;
   width: 100%;
-  ${'' /* background-color: #2026d2; */}
   background-color: white;
-  ${'' /* background-color: #26D7AB; */}
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -39,9 +37,7 @@ const LeftHero = styled.div`
 const Heading = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  ${'' /* color: white; */}
-  ${'' /* color:#2A2552; */}
-  color:#193259;
+  color: #193259;
   font-weight: 700;
   font-size: 30px;
   text-align: center;
@@ -55,8 +51,7 @@ const ButtonJoin = styled.button`
   display: flex;
   height: 50px;
   width: 200px;
-  ${'' /* background-color: #f1295c; */}
-  background-color:#46B86E;
+  background-color: #46b86e;
   color: white;
   justify-content: center;
   align-items: center;
@@ -83,7 +78,6 @@ const HeroSection = () => {
                 Join us on our mission to help people around the world to be
                 financially empowered.
               </Heading>
-              {/* <SubscribeInput /> */}
               <ButtonJoin>Join Community</ButtonJoin>
             </LeftHero>
           </HeroContent>

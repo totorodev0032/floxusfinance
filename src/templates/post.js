@@ -36,6 +36,7 @@ const PostArea = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+  font-family: 'Fira Sans', sans-serif;
 
   @media (max-width: 496px) {
     width: 90%;

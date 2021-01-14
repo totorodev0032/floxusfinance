@@ -1,5 +1,6 @@
 import React from 'react';
 import { Global } from '@emotion/react';
+import './app.css';
 
 const Layout = ({ children }) => {
   return (

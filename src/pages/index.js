@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar';
 import PostCard from '../components/PostCard/PostCard';
 import PostContainerLayout from '../components/PostContainer/PostContainerLayout';
 import SubscribeContainer from '../components/SubscribeContainer/SubscribeContainer';
+import '../components/app.css';
 
 const IndexPage = () => {
   return (

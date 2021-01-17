@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 import Layout from '../components/Layout';
 import { Link } from 'gatsby';
 import SubscribeContainer from '../components/SubscribeContainer/SubscribeContainer';
+import RecentPostContainer from '../components/RecentPostContainer/RecentPostContainer';
 
 export const query = graphql`
   query($slug: String!) {
@@ -76,6 +77,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
           &larr; back to all posts
         </Link>
       </PostArea>
+      <RecentPostContainer />
       <SubscribeContainer />
     </PostAreaContainer>
   </Layout>

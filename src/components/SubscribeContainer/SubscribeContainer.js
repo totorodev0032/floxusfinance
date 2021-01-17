@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import SubscribeInput from '../SubscribeInput/SubscribeInput';
+import RecentPost from '../RecentPost/RecentPost';
 
 const Wrapper = styled.div`
   display: flex;
@@ -30,6 +31,7 @@ const SubscribeContainer = () => {
   return (
     <>
       <Wrapper id="subscribe">
+        {/* <RecentPost /> */}
         <Heading>Subscribe to our blog.</Heading>
         <SubscribeInput />
         <Heading>Logo</Heading>

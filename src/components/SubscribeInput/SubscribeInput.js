@@ -1,4 +1,5 @@
 import React from 'react';
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 const InputContainer = styled.div`
@@ -17,10 +18,11 @@ const InputContainer = styled.div`
 `;
 
 const Input = styled.input`
-  width: 70%;
-  height: 80%;
+  width: 80%;
+  height: 100%;
   border: none;
   margin-left: 3px;
+  margin-top: 4px;
   background-color: white;
   :focus {
     outline: none;
@@ -46,6 +48,9 @@ const Button = styled.button`
   font-size: 25px;
   border: none;
   border-radius: 7px;
+  margin-left: auto;
+  margin-right: 5px;
+  margin-top: 2px;
 
   &:hover {
     cursor: pointer;
@@ -60,10 +65,27 @@ const SubscribeInput = () => {
   return (
     <>
       <InputContainer>
-        <Input placeholder="Subscribe to our blog" />
-        <Button>
-          <SymbolNext>&rarr;</SymbolNext>
-        </Button>
+        <form
+          css={css`
+            display: flex;
+            width: 100%;
+            height: 100%;
+          `}
+        >
+          <label
+            css={css`
+              display: flex;
+              width: 70%;
+              height: 80%;
+              margin-left: 5px;
+            `}
+          >
+            <Input placeholder="Subscribe to our blog" />
+          </label>
+          <Button>
+            <SymbolNext>&rarr;</SymbolNext>
+          </Button>
+        </form>
       </InputContainer>
     </>
   );

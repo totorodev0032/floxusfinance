@@ -6,7 +6,7 @@ import Layout from '../Layout';
 const Container = styled.div`
   display: flex;
   width: 100%;
-  background-color: #f4f8fc;
+  background-color: white;
   height: auto;
   justify-content: center;
   align-items: center;

@@ -8,7 +8,8 @@ const PostWrap = styled.div`
   background-color: white;
   border-radius: 4px;
   margin-top: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 50px 80px rgba(0, 0, 0, 0.07);
 
   @media (max-width: 496px) {
     width: 50%;

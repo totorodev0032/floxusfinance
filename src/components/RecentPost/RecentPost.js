@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Link } from 'gatsby';
 
 const PostWrap = styled.div`
   display: flex;
@@ -45,7 +45,23 @@ const PostDescription = styled.div`
   ${'' /* align-items: center; */}
 `;
 
+const NavLink = styled(Link)`
+  text-decoration: none;
+  display: flex;
+  height: auto;
+  width: 100px;
+  margin-left: 20px;
+  color: #1e8aff;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+
+  &:focus {
+    backgroun-color: none;
+  }
+`;
+
 const RecentPost = ({ post }) => {
+  console.log(post.slug);
   return (
     <>
       <PostWrap>
@@ -74,14 +90,16 @@ const RecentPost = ({ post }) => {
               {post.excerpt}
             </p>
             <Link
-              to={post.slug}
+              to={`/${post.slug}`}
               css={css`
                 text-decoration: none;
                 color: #1e8aff;
-                margin-top: 0;
+                font-family: 'Fira Sans', sans-serif;
+                padding-top: 10px;
+                font-size: 13px;
               `}
             >
-              <p>Read More</p>
+              Read More
             </Link>
           </PostDescription>
         </PostContentWrap>

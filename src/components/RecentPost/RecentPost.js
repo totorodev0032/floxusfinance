@@ -61,7 +61,6 @@ const NavLink = styled(Link)`
 `;
 
 const RecentPost = ({ post }) => {
-  console.log(post.slug);
   return (
     <>
       <PostWrap>

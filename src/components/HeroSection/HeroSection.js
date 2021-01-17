@@ -1,8 +1,6 @@
 import React from 'react';
-import { jsx, css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Layout from '../Layout';
-import SubscribeInput from '../SubscribeInput/SubscribeInput';
 
 const Herosection = styled.div`
   display: flex;

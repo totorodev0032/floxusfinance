@@ -7,8 +7,10 @@ const PostWrapper = styled.div`
   flex-direction: column;
   width: 328px;
   height: 400px;
-  background-color: #f4f8fc;
+  background-color: #ffffff;
   margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px #eaeaea, -5px -5px 8px #ffffff;
 
   @media (max-width: 496px) {
     width: 90%;
@@ -19,6 +21,8 @@ const PostUp = styled.div`
   display: flex;
   flex-basis: 38%;
   background-color: #e0f7fa;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   width: 100%;
 `;
 

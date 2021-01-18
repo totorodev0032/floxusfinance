@@ -28,7 +28,6 @@ const PostContainer = styled.div`
 
 const PostContainerLayout = () => {
   const posts = usePosts();
-  console.log(posts);
   return (
     <>
       <PostWrapperLayout>

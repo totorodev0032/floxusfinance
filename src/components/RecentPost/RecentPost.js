@@ -13,7 +13,7 @@ const PostWrap = styled.div`
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 50px 80px rgba(0, 0, 0, 0.07);
+  box-shadow: 5px 5px 8px #eaeaea, -5px -5px 8px #ffffff;
 
   @media (max-width: 496px) {
     width: 90%;

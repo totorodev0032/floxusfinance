@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
           body: {
             margin: 0,
             padding: 0,
+            
           },
         }}
       />

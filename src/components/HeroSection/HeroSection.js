@@ -10,6 +10,7 @@ const Herosection = styled.div`
   margin: 0;
   padding: 0;
   justify-content: center;
+  background:#F8F9FA;
 `;
 
 const HeroContent = styled.div`
@@ -33,8 +34,7 @@ const LeftHero = styled.div`
 `;
 
 const Heading = styled.p`
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Jost', sans-serif;
   color: #193259;
   font-weight: 700;
   font-size: 40px;
@@ -57,8 +57,7 @@ const ButtonJoin = styled.button`
   border-radius: 10px;
   font-weight: 700;
   letter-spacing: 0.3;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Jost', sans-serif;
   cursor: pointer;
   margin-top: 20px;
   letter-spacing: 2;

@@ -67,7 +67,7 @@ const Navbar = () => {
                 Logo
               </h1>
             </NavLeft>
-            <NavRight>
+            {/* <NavRight>
               <BtnLink to="/#subscribe">
                 <p
                   css={css`
@@ -83,7 +83,7 @@ const Navbar = () => {
                   Subscribe
                 </p>
               </BtnLink>
-            </NavRight>
+            </NavRight> */}
           </Nav>
         </NavWrapper>
       </Layout>

@@ -9,6 +9,7 @@ const PostWrapperLayout = styled.div`
   height: auto;
   justify-content: center;
   background-color: white;
+  background:#F8F9FA;
 `;
 
 const PostContainer = styled.div`
